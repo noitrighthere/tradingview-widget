@@ -17,17 +17,16 @@
     .tradingview-widget-copyright {
       display: none !important;
     }
+    /* hide external Track all markets link */
+    body > a {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
   <!-- TradingView Widget BEGIN -->
   <div class="tradingview-widget-container">
     <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright">
-      <a href="https://kr.tradingview.com/markets/" rel="noopener nofollow" target="_blank">
-        <span class="blue-text">Track all markets on TradingView</span>
-      </a>
-    </div>
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
     {
       "symbols": [
