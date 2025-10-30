@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>TradingView Ticker</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      height: 50px;
+      overflow: hidden;
+    }
+    .tradingview-widget-container {
+      line-height: 0;
+      display: block;
+      height: 50px;
+    }
+    .tradingview-widget-copyright {
+      display: none !important;
+    }
+    body > a {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright">
+      <a href="https://kr.tradingview.com/markets/" rel="noopener nofollow" target="_blank">
+        <span class="blue-text">Track all markets on TradingView</span>
+      </a>
+    </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        { "proName": "AMEX:VOO", "title": "" },
+        { "proName": "NASDAQ:NVDA", "title": "" },
+        { "proName": "ASX:JPEQ", "title": "" },
+        { "proName": "IG:BITCOIN", "title": "" },
+        { "proName": "NASDAQ:QQQM", "title": "" },
+        { "proName": "FX_IDC:USDKRW", "title": "USD/KRW" }
+      ],
+      "colorTheme": "light",
+      "locale": "kr",
+      "largeChartUrl": "",
+      "isTransparent": false,
+      "showSymbolLogo": true,
+      "displayMode": "regular",
+      "height": 50
+    }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</body>
+</html>
